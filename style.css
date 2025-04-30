@@ -1,0 +1,204 @@
+/* Font & Base Setup */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background: #fffafc;
+    color: #333;
+  }
+  
+  header.banner {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to right, #ffd6e8, #d6eaff);
+    padding: 1rem;
+  }
+  
+  .banner-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .motto {
+    margin-top: 1rem;
+  }
+  
+  .motto h1 {
+    font-size: 2.5rem;
+    color: #d84f8d;
+  }
+  
+  .motto p {
+    font-size: 1.2rem;
+    color: #4c7caf;
+  }
+  
+  .video-section {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+  
+  .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: #fff0f7;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #ffe6f0;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background: #f9eaff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .team-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .video-section iframe {
+      width: 90%;
+      height: auto;
+    }
+  }
+  
+/* Toolbar */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe6f0;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .toolbar-left .logo {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #d84f8d;
+  }
+  
+  .toolbar-right a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #4c7caf;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .toolbar-right a:hover {
+    color: #d84f8d;
+  }
+  
+  /* Add space below toolbar so content isn't blocked */
+  .banner {
+    margin-top: 1rem;
+  }
+
+/* Team card enhancements */
+.card .role {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #4c7caf;
+  }
+  
+  .card .desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.3rem;
+  }
+  
+  /* Food carousel styles */
+  .food-carousel {
+    text-align: center;
+    margin: 3rem auto;
+    padding: 1rem;
+    background: #fff0f7;
+    border-radius: 15px;
+    max-width: 90%;
+  }
+  
+  .food-title {
+    font-size: 1.8rem;
+    color: #d84f8d;
+  }
+  
+  .food-caption {
+    font-size: 1rem;
+    color: #4c7caf;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+  }
+  
+  .carousel img {
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel img:hover {
+    transform: scale(1.05);
+  }
+  
+  .scroll-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #d84f8d;
+    cursor: pointer;
+    padding: 0 1rem;
+    user-select: none;
+  }
+  
+  .scroll-btn:focus {
+    outline: none;
+  }
+  
