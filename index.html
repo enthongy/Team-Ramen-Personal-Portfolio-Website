@@ -8,49 +8,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <nav class="toolbar">
-        <div class="toolbar-left">
-          <span class="logo">🍜 TEAM RAMEN</span>
-        </div>
-        <div class="toolbar-right">
-          <a href="index.html">Home</a>
-          <a href="projects.html">Projects</a>
-          <a href="yap.html">About Us</a>
-        </div>
-      </nav>
+  <nav class="toolbar">
+    <div class="toolbar-left">
+      <span class="logo">🍜 TEAM RAMEN</span>
+    </div>
+    <div class="toolbar-right">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="yap.html">About Us</a>
+    </div>
+  </nav>
 
   <header class="banner">
-    <img src="placeholder-team-photo.jpg" alt="TEAM RAMEN" class="banner-img" />
+    <img src="banner2.png" alt="TEAM RAMEN" class="banner-img" />
     <div class="motto">
       <h1>TEAM RAMEN</h1>
       <p>Brewed with code, bonded by passion 🍜</p>
     </div>
   </header>
 
+  <main>
   <section class="video-section">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" 
-      title="TEAM RAMEN Introduction Video" 
-      frameborder="0" allowfullscreen>
-    </iframe>
-  </section>
-
-  <section class="food-carousel">
-    <h2 class="food-title">🍱 Our 2025 Food Journey</h2>
-    <p class="food-caption">"Code hard, eat harder – our memories in bites and bytes."</p>
-    <div class="carousel-container">
-      <button class="scroll-btn left" onclick="scrollCarousel(-1)">❮</button>
-      <div class="carousel" id="carousel">
-        <img src="ramen.png" alt="Ramen Night" onclick="goToPage('food1.html')" />
-        <img src="spice.jpg" alt="Spice Session" onclick="goToPage('food2.html')" />
-        <img src="nanyang.jpg" alt="Nanyang Favoury" onclick="goToPage('food3.html')" />
-        <!-- Add more images as needed -->
+    <div class="video-table">
+      <div class="video-left">
+        <iframe width="420" height="250" src="https://www.youtube.com/embed/your-video-id"
+          title="TEAM RAMEN Introduction Video" frameborder="0" allowfullscreen>
+        </iframe>
       </div>
-      <button class="scroll-btn right" onclick="scrollCarousel(1)">❯</button>
+      <div class="video-right">
+        <h2>Welcome to Team Ramen!</h2>
+        <p>We are passionate developers bound by friendship and endless ramen bowls. Watch our intro video to learn how we blend fun, food, and code into our projects!</p>
+      </div>
     </div>
   </section>
   
 
-  <main>
     <section class="team-cards">
       <div class="card" onclick="goToPage('yap.html')">
         <img src="imageYap.jpg" alt="Yap En Thong" />
@@ -70,6 +62,21 @@
         <p class="role">Logic Lover</p>
         <p class="desc">Loves to blend logic with art. Coffee-powered and code-driven.</p>
       </div>
+    </section>
+    <section class="food-carousel">
+      <h2 class="food-title">🍱 Our 2025 Food Journey</h2>
+      <p class="food-caption">"Code hard, eat harder – our memories in bites and bytes."</p>
+      <div class="carousel-container">
+        <button class="scroll-btn left" onclick="scrollCarousel(-1)">❮</button>
+        <div class="carousel" id="carousel">
+          <img src="ramen.png" alt="Ramen Night" onclick="goToPage('food1.html')" />
+          <img src="spice.jpg" alt="Spice Session" onclick="goToPage('food2.html')" />
+          <img src="nanyang.jpg" alt="Nanyang Favoury" onclick="goToPage('food3.html')" />
+          <!-- Add more images as needed -->
+        </div>
+        <button class="scroll-btn right" onclick="scrollCarousel(1)">❯</button>
+      </div>
+
     </section>
   </main>
 
