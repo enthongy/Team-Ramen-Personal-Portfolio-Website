@@ -38,16 +38,12 @@ header.banner {
   margin: 0;
   text-shadow: 2px 2px 5px white;  /* White shadow for contrast */
 }
-
 .motto p {
   font-size: 1.5rem;
   color: #2f4f78;
   font-weight: bold;
   text-shadow: 1px 1px 3px white;  /* White shadow for clarity */
 }
-
-
-
 
 body {
   font-family: 'Quicksand', sans-serif;
