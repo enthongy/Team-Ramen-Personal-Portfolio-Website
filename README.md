@@ -59,7 +59,7 @@ Performance and accessibility were evaluated using Google Lighthouse.
 
 ---
 
-👉 [View Live Site](https://your-github-enthongy.github.io/Team-Ramen-Personal-Portfolio-Website)
+👉 [View Live Site]([https://your-github-enthongy.github.io/Team-Ramen-Personal-Portfolio-Website](https://enthongy.github.io/Team-Ramen-Personal-Portfolio-Website/)
 
 ---
 
