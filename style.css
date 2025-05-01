@@ -250,3 +250,14 @@ footer {
   padding: 0 1rem;
   user-select: none;
 }
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #d84f8d;
+  text-decoration: none;  /* Remove underline */
+}
+
+.logo:hover {
+  color: #b83870;          /* Optional hover effect */
+}
