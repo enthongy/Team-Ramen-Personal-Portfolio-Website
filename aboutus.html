@@ -1,0 +1,140 @@
+<!-- 
+Team Ramen:
+Member 1: Yap En Thong
+Member 2: Ong Ya Sian
+Member 3: Cheng Jia Yi
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Team Ramen</title>
+  <meta name="description" content="Team Ramen Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .card {
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .card a {
+      text-decoration: underline;
+      color: #007BFF;
+    }
+    .card a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="toolbar" role="navigation" aria-label="Main Navigation">
+    <div class="toolbar-left">
+      <a href="home.html" class="logo-link">🍜 Team Ramen</a>
+    </div>
+    <div class="toolbar-right">
+      <a href="home.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="projects.html">Projects</a>
+      <a href="yapenthong.html">Yap En Thong</a>
+      <a href="ongyasian.html">Ong Ya Sian</a>
+      <a href="chengjiayi.html">Cheng Jia Yi</a>
+    </div>
+  </nav>
+
+  <header class="banner">
+    <img src="imagesandvideos/bannerimage.png" alt="Team Ramen Banner" class="banner-img" loading="lazy" />
+    <div class="motto">
+      <h1>Team Ramen</h1>
+      <p>Bytes and Bites, Code and Consume</p>
+    </div>
+  </header>
+
+  <main role="main">
+    <section class="about-team" aria-label="About Team Ramen">
+      <article class="team-card" onclick="location.href='projects.html';" tabindex="0">
+        <h2 class="centered-text">All About Us</h2>
+        <p class="centered-text">We are <strong>Team Ramen</strong> — three passionate software engineering students from <strong>Universiti Teknologi Malaysia</strong> with a hunger for learning, building, and solving real-world problems.</p>
+        <p class="centered-text">Meeting while pursuing an education in Software Engineering, we have collaborated over <strong>multiple projects.</strong></p>
+        <p class="centered-text">This page celebrates our collaboration, values, and dreams. Let’s connect and grow together in tech! 🚀</p>
+      </article>
+    </section>
+
+    <section class="team-cards">
+      <article class="card" onclick="location.href='yapenthong.html';" tabindex="0">
+        <img src="imagesandvideos/yapimage.jpg" alt="Yap En Thong - Software Engineer" class="member-img" width="100" height="100" loading="lazy">
+        <h2>Yap En Thong</h2>
+        <p class="role">A23CS0284</p>
+        <p class="desc">Hi, I'm <strong>Yap En Thong</strong>, a second-year Computer Science student specializing in Software Engineering at <strong>UTM Johor Bahru</strong>.</p>
+        <p class="desc">I lead the AI Department in <strong>UTM Airost Team</strong> and recently became a champion in <strong>NIARC 2024</strong> 🏆.</p>
+        <p class="desc">I code in <strong>C++, Java, Python, MySQL, HTML</strong> and explore <strong>NI LabVIEW</strong> as well.</p>
+        <p class="desc">Let’s connect:</p>
+        <ul class="social-links">
+          <li><a class="no-card-click" href="https://www.instagram.com/enthongy04?igsh=OGhuMHZ3YXhrZDg5" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a class="no-card-click" href="https://github.com/enthongy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </article>
+
+      <article class="card" onclick="location.href='ongyasian.html';" tabindex="0">
+        <img src="imagesandvideos/ongimage.jpg" alt="Ong Ya Sian - Software Engineer" class="member-img" width="100" height="100" loading="lazy">
+        <h2>Ong Ya Sian</h2>
+        <p class="role">A23CS0260</p>
+        <p class="desc">Hello! I'm <strong>Ong Ya Sian</strong>, a second-year Software Engineering student at <strong>UTM</strong>.</p>
+        <p class="desc">I’m passionate about full-stack development and love turning ideas into interactive web experiences. Code + Creativity = 💻❤️.</p>
+        <p class="desc">I believe good design is invisible but powerful.</p>
+        <p class="skills"><strong>Skills:</strong></p>
+        <ul class="skills-list">
+          <li>HTML, CSS, JavaScript</li>
+          <li>C++, Java</li>
+        </ul>
+        <p class="desc">Let’s connect:</p>
+        <ul class="social-links">
+          <li><a class="no-card-click" href="https://www.instagram.com/226y.s/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a class="no-card-click" href="https://github.com/yasian04" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </article>
+
+      <article class="card" onclick="location.href='chengjiayi.html';" tabindex="0">
+        <img src="imagesandvideos/chengimage.jpg" alt="Cheng Jia Yi - Software Engineer" class="member-img" width="100" height="100" loading="lazy">
+        <h2>Cheng Jia Yi</h2>
+        <p class="role">A23CS0215</p>
+        <p class="desc">Hi! I'm <strong>Cheng Jia Yi</strong>, a second-year Software Engineering student at Universiti Teknologi Malaysia.</p>
+        <p class="desc">Languages I use include <strong>C, C++, Python, Java, HTML, CSS, and JavaScript</strong>.</p>
+        <p class="desc">I’m currently learning about <strong>Operating Systems, Software Modeling, OOP, and Web Programming</strong>.</p>
+        <p class="desc">In my free time, I enjoy <strong>reading, watching videos, and exploring new languages</strong>.</p>
+        <p class="desc">Find me here:</p>
+        <ul class="social-links">
+          <li><a class="no-card-click" href="https://www.instagram.com/_chengjiayi?igsh=bm9kZDNqcnVrbDdo" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a class="no-card-click" href="https://github.com/cheng-jiayi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p class="footer-note">© 2025 Team Ramen | Built with 🍜, HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script>
+    // Prevent card click when social link is clicked
+    document.querySelectorAll('.no-card-click').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.stopPropagation();
+      });
+    });
+  </script>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

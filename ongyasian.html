@@ -1,0 +1,246 @@
+<!-- 
+Group Happy:
+Member 1: Yap En Thong
+Member 2: Ong Ya Sian
+Member 3: Cheng Jia Yi
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ong Ya Sian | Team Ramen</title>
+  <meta name="description" content="Team Ramen Portfolio" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2d9a66f1b.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      width: 100%;
+      padding: 1rem 0.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .box {
+      background-color: #fff0f7;
+      width: 100%;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .gallery-carousel {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    
+    .carousel-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      overflow: hidden;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      max-width: 90vw;
+      padding: 1rem 0;
+      gap: 1rem;
+    }
+    
+    .carousel-item {
+      flex: 0 0 auto;
+      position: relative;
+      width: 250px;
+      height: 180px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0,0,0,0.5);
+      color: #fff;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    
+
+  </style>
+</head>
+  <nav class="toolbar" role="navigation">
+    <div class="toolbar-left">
+      <a href="home.html" class="logo-link">🍜 Team Ramen</a>
+    </div>
+    
+    <div class="toolbar-right">
+      <a href="home.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="projects.html">Projects</a>
+      <a href="yapenthong.html">Yap En Thong</a>
+      <a href="ongyasian.html">Ong Ya Sian</a>
+      <a href="chengjiayi.html">Cheng Jia Yi</a>
+    </div>
+  </nav>
+
+  <header class="banner">
+    <img src="imagesandvideos/bannerimage.png" alt="Banner Image" class="banner-img" width="1200" height="350" />
+    <div class="motto">
+      <h1>Ong Ya Sian</h1>
+      <p>Team Ramen</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="id-card">
+      <article class="card pink-card">
+        <img src="imagesandvideos/ongimage.jpg" alt="Yap En Thong" class="passport-photo-large"/>
+      </article>
+    </section>
+
+    <section class="profile-container">
+      <div class="box about-box">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <p>Hello! I'm <strong>Ong Ya Sian</strong>, a second-year Software Engineering student at Universiti Teknologi Malaysia. I'm passionate about building elegant, accessible, and user-friendly digital solutions. I thrive on solving problems and constantly learning new tools and techniques in web and software development.</p>
+      </div>
+
+      <div class="box skills-box">
+        <h2><i class="fas fa-code"></i> Technical Skills</h2>
+        <ul>
+          <li><strong>Languages:</strong> HTML, CSS, JavaScript, C++</li>
+          <li><strong>Tools:</strong> Git, GitHub, VS Code, DevTools</li>
+          <li><strong>Concepts:</strong> OOP, Responsive Design, DSA</li>
+        </ul>
+      </div>
+
+      <div class="box interests-box">
+        <h2><i class="fas fa-heart"></i> Interests</h2>
+        <p>I love collaborating on team projects, exploring new technologies, and enjoying ramen with friends. Outside of coding, I value creativity, community, and continuous improvement.</p>
+      </div>
+
+      <div class="box contact-box">
+        <h2>You can find me on:</h2>
+        <ul class="social-links" role="list">
+          <li><a href="https://www.instagram.com/226y.s/" target="_blank" rel="noopener noreferrer" aria-label="Ong Ya Sian on Instagram">Instagram</a></li>
+          <li><a href="https://github.com/yasian04" target="_blank" rel="noopener noreferrer" aria-label="Ong Ya Sian on GitHub">GitHub</a></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="projects">
+      <h2>Ya Sian's Projects</h2>
+      <p>Explore the side-projects I've worked on!</p>
+
+      <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p class="project-description">
+            <img src="imagesandvideos/ongyasian/Portfolio.png" alt="Poftfolio" loading="lazy"/>
+            A fully responsive and modern portfolio website created using HTML, CSS Grid, and JavaScript. 
+            It includes structured layout components like reusable cards, a banner, a navigation toolbar, and an interactive image carousel. 
+            The project demonstrates strong front-end development skills, attention to responsive design principles, and effective use of web standards.</p>
+        </article>
+        <article class="project-card">
+          <h3>Usability Performance Evaluation and Analysis Report</h3>
+          <img src="imagesandvideos\ongyasian\USABILITY.png" alt="Usability evaluation of Travel Website" class="project-image" width="600" height="400" loading="lazy">
+          <p class="project-description">
+            Conducted a usability evaluation for selected travel and transport digital platforms as part of the Human-Computer Interaction course (SECV2113, 2024/2025 Semester 1).  
+            This project enhanced my understanding of HCI principles, usability testing methodologies, and data analysis, while also contributing to my GitHub portfolio as a published technical report.
+          </p>
+          <a href="https://drive.google.com/file/d/1zvwq6B-yo5bhsD-HwxMintqLaV2OH1IJ/view?usp=drive_link" target="_blank" rel="noopener">View Full Report</a>
+        </article>
+        <article class="project-card">
+          <h3>DSA - Mini Project</h3>
+          <p class="project-description">
+            <img src="imagesandvideos/yapenthong/queue.png" alt="Queue Simulation System" loading="lazy"/>
+            This project, titled Korean Food Queuing Simulation Platform, is a C++-based system developed to simulate and manage customer queues in a Korean food restaurant setting.  
+            This project showcases the practical application of core data structure concepts, emphasizing FIFO queue operations, and highlights teamwork in building a functional, user-oriented solution.
+          </p>
+          <a href="https://drive.google.com/file/d/1zvwq6B-yo5bhsD-HwxMintqLaV2OH1IJ/view?usp=drive_link" target="_blank" rel="noopener">View Full Report</a>
+          
+        </article>
+        
+      </div>
+
+    </section>
+
+    <section class="gallery-carousel">
+      <h2 class="food-title">Ya Sian's Gallery</h2>
+      <p class="food-caption">"The Best Moments Of 2025."</p>
+    
+      <div class="carousel-container">
+        <button class="scroll-btn left" onclick="scrollCarousel(-1)" aria-label="Scroll left">❮</button>
+        <div class="carousel" id="carousel">
+          <div class="carousel-item">
+            <img src="imagesandvideos\ongyasian\Ipoh Trip.jpg" alt="Ipoh Trip 1" loading="lazy">
+            <div class="overlay">Ipoh Trip 1</div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagesandvideos\ongyasian\Ipoh Trip 2.jpg" alt="Ipoh Trip 2" loading="lazy">
+            <div class="overlay">Ipoh Trip 2</div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagesandvideos\ongyasian\Trekking.jpg" alt="Trekking with Jiayi" loading="lazy">
+            <div class="overlay">Trekking with Jia Yi</div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagesandvideos\ongyasian\Birthday.jpg" alt="Birthday Celebration With Family" loading="lazy">
+            <div class="overlay">Birthday Celebration With Family</div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagesandvideos\ongyasian\Happy New Year Celebration.jpg" alt="New Year Celebration" loading="lazy">
+            <div class="overlay">New Year Celebration</div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagesandvideos\ongyasian\Sister Convo.jpg" alt="Sister Convocation" loading="lazy">
+            <div class="overlay">Sister Convocation</div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagesandvideos\ongyasian\Group Happy.jpg" alt="Group Happy" loading="lazy">
+            <div class="overlay">Group Happy</div>
+          </div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollCarousel(1)" aria-label="Scroll right">❯</button>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p class="footer-note">© 2025 Team Ramen | Built with 🍜, HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,160 @@
+<!-- 
+Team Ramen:
+Member 1: Yap En Thong
+Member 2: Ong Ya Sian
+Member 3: Cheng Jia Yi
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Team Ramen</title>
+  <meta name="description" content="Team Ramen Portfolio" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  
+  <link rel="preload" href="imagesandvideos/home/introductionvideo.mp4" as="video" type="video/mp4">
+  <link rel="preload" href="imagesandvideos/bannerimage.png" as="image" type="image/png">
+  
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" as="style">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .toolbar { display: flex; justify-content: space-between; padding: 10px; }
+    .banner { position: relative; text-align: center; }
+  </style>
+
+</head>
+<body>
+  <nav class="toolbar" role="navigation">
+    <div class="toolbar-left">
+      <a href="home.html" class="logo-link" aria-label="Go to homepage">🍜 Team Ramen</a>
+    </div>
+    
+    <div class="toolbar-right">
+      <a href="home.html" aria-label="Go to homepage">Home</a>
+      <a href="aboutus.html" aria-label="Learn about us">About Us</a>
+      <a href="projects.html" aria-label="View our projects">Projects</a>
+      <a href="yapenthong.html" aria-label="Learn about Yap En Thong">Yap En Thong</a>
+      <a href="ongyasian.html" aria-label="Learn about Ong Ya Sian">Ong Ya Sian</a>
+      <a href="chengjiayi.html" aria-label="Learn about Cheng Jia Yi">Cheng Jia Yi</a>
+    </div>
+  </nav>
+
+  <header class="banner" role="banner">
+    <img src="imagesandvideos/bannerimage.png" alt="Banner Image" class="banner-img" width="1200" height="350" loading="lazy" />
+    <div class="motto">
+      <h1>Team Ramen</h1>
+      <p>Bytes and Bites, Code and Consume</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="video-section" aria-labelledby="video-section">
+      <div class="video-table">
+        <div class="video-left">
+          <video width="420" height="250" controls preload="metadata" poster="imagesandvideos/video-placeholder.jpg" style="border-radius:10px;" loading="lazy" aria-label="Team Ramen introduction video">
+            <source src="imagesandvideos/home/introductionvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-right">
+          <h2 id="video-section">Team Ramen Says Hello!</h2>
+          <p>We are passionate developers bound by friendship and endless ramen bowls. Watch our intro video to learn how we blend fun, food, and code into our projects!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-cards">
+      <article class="card" onclick="goToPage('yapenthong.html')" tabindex="0">
+        <img src="imagesandvideos/yapimage.jpg" alt="Yap En Thong" width="100" height="100" loading="lazy" />
+        <h2>Yap En Thong</h2>
+        <p class="role">A23CS0284</p>
+        <p class="desc">2nd-year Software Engineering student at UTM. On a journey to master the art of coding🚀</p>
+      </article>
+
+      <article class="card" onclick="goToPage('ongyasian.html')" tabindex="0">
+        <img src="imagesandvideos/ongimage.jpg" alt="Ong Ya Sian" width="100" height="100" loading="lazy" />
+        <h2>Ong Ya Sian</h2>
+        <p class="role">A23CS0260</p>
+        <p class="desc">A second year student Software Engineering at UTM. I recently started exploring the exciting world of Computer Technology.</p>
+      </article>
+
+      <article class="card" onclick="goToPage('chengjiayi.html')" tabindex="0">
+        <img src="imagesandvideos/chengimage.jpg" alt="Cheng Jia Yi" width="100" height="100" loading="lazy" />
+        <h2>Cheng Jia Yi</h2>
+        <p class="role">A23CS0215</p>
+        <p class="desc">Hello! I am a 2nd Year Software Engineering Undergraduate at Universiti Teknologi Malaysia.</p>
+      </article>
+    </section>
+
+    <section class="food-carousel">
+      <h2 class="food-title">🍱🍣2025 Food Journey🍣🍱</h2>
+      <p class="food-caption">"Our memories in bites and bytes."</p>
+      <div class="carousel-container">
+        <button class="scroll-btn left" onclick="scrollCarousel(-1)" aria-label="Scroll left">❮</button>
+        <div class="carousel" id="carousel" aria-live="polite">
+          <img src="imagesandvideos/home/yamaimage.jpg" alt="Yama1" loading="lazy">
+          <img src="imagesandvideos/home/yamaimage2.jpg" alt="Yama2" loading="lazy">
+          <img src="imagesandvideos/home/rasasayangimage.jpg" alt="Rasa Sayang1" loading="lazy">
+          <img src="imagesandvideos/home/rasasayangimage2.jpg" alt="Rasa Sayang2" loading="lazy">
+          <img src="imagesandvideos/home/richiamoimage.jpg" alt="Richiamo" loading="lazy">
+          <img src="imagesandvideos/home/sepuluhimage.jpg" alt="Sepuluh" loading="lazy">
+          <img src="imagesandvideos/home/trioramenimage.jpg" alt="Trio Ramen1" loading="lazy">
+          <img src="imagesandvideos/home/trioramenimage2.jpg" alt="Trio Ramen2" loading="lazy">
+          <img src="imagesandvideos/home/zusimage.jpg" alt="Zus Coffee" loading="lazy">
+        </div>
+        <button class="scroll-btn right" onclick="scrollCarousel(1)" aria-label="Scroll right">❯</button>
+      </div>
+    </section>
+
+    <section class="message-board">
+      <div class="message-container">
+        <div class="form-section">
+          <h2>Message Us</h2>
+          <form action="#" method="post" aria-labelledby="message-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+            <button type="submit" aria-label="Send message">Send</button>
+          </form>
+        </div>
+    
+        <div class="info-section">
+          <h3>Contact Info</h3>
+          <p><strong>Email:</strong></p>
+          <ul class="email-list">
+            <li><a href="mailto:thong04@graduate.utm.my">thong04@graduate.utm.my</a></li>
+            <li><a href="mailto:ongsian@graduate.utm.my">ongsian@graduate.utm.my</a></li>
+            <li><a href="mailto:chengyi@graduate.utm.my">chengyi@graduate.utm.my</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p class="footer-note">© 2025 Team Ramen | Built with 🍜, HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
